@@ -1,0 +1,162 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="6E97A84C-B06F-871E-FED9-9F74AAD33755" name="T_CP1_ADDRESS">
+<createdBy>Thiago</createdBy>
+<createdTime>2026-03-05 20:29:11 UTC</createdTime>
+<ownerDesignName>online-sales</ownerDesignName>
+<engineerTo>
+<item key="B7884481-4DAD-851F-D340-BAEBECCF223F" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="ID_ADDRESS" id="9725FB6F-DC94-B6A5-0ED8-6D1BF8732FD7">
+<createdBy>Thiago</createdBy>
+<createdTime>2026-03-05 20:29:19 UTC</createdTime>
+<ownerDesignName>online-sales</ownerDesignName>
+<engineerTo>
+<item key="B7884481-4DAD-851F-D340-BAEBECCF223F" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ID_COSTUMER" id="188B511B-7DE1-F29D-86C9-7E166AF65546">
+<createdBy>Thiago</createdBy>
+<createdTime>2026-03-05 20:47:52 UTC</createdTime>
+<generatorID>57C80AD5-9C57-9B47-2318-3F166B15944F</generatorID>
+<ownerDesignName>online-sales</ownerDesignName>
+<engineerTo>
+<item key="B7884481-4DAD-851F-D340-BAEBECCF223F" value="true"/>
+</engineerTo>
+<referedAttribute>24612415-D741-24D5-81B5-113CEF710E54</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ACTIVE" id="E10861BC-A5E3-F5B6-671B-8561AE6B5874">
+<createdBy>Thiago</createdBy>
+<createdTime>2026-03-05 20:29:31 UTC</createdTime>
+<ownerDesignName>online-sales</ownerDesignName>
+<engineerTo>
+<item key="B7884481-4DAD-851F-D340-BAEBECCF223F" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT006</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="CREATEDAT" id="FA450E0A-F0A2-3F15-8222-8071B4772ED2">
+<createdBy>Thiago</createdBy>
+<createdTime>2026-03-05 20:29:43 UTC</createdTime>
+<ownerDesignName>online-sales</ownerDesignName>
+<engineerTo>
+<item key="B7884481-4DAD-851F-D340-BAEBECCF223F" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="STREET" id="6CCD5E57-1A97-DAF3-71B0-CF4E541B7171">
+<createdBy>Thiago</createdBy>
+<createdTime>2026-03-05 20:30:02 UTC</createdTime>
+<ownerDesignName>online-sales</ownerDesignName>
+<engineerTo>
+<item key="B7884481-4DAD-851F-D340-BAEBECCF223F" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>150</dataTypeSize>
+<ownDataTypeParameters>150,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="CITY" id="874EC7A4-AB07-4646-0ECF-9F449B0B7B65">
+<createdBy>Thiago</createdBy>
+<createdTime>2026-03-05 20:30:16 UTC</createdTime>
+<ownerDesignName>online-sales</ownerDesignName>
+<engineerTo>
+<item key="B7884481-4DAD-851F-D340-BAEBECCF223F" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>70</dataTypeSize>
+<ownDataTypeParameters>70,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="STATE" id="745D9F59-3CC3-E481-5B27-A5D06D9C9D88">
+<createdBy>Thiago</createdBy>
+<createdTime>2026-03-05 20:30:31 UTC</createdTime>
+<ownerDesignName>online-sales</ownerDesignName>
+<engineerTo>
+<item key="B7884481-4DAD-851F-D340-BAEBECCF223F" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>70</dataTypeSize>
+<ownDataTypeParameters>70,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="PostalCode" id="ED8F0F40-8EE1-3839-08D1-74558C4545D1">
+<createdBy>Thiago</createdBy>
+<createdTime>2026-03-05 20:31:11 UTC</createdTime>
+<ownerDesignName>online-sales</ownerDesignName>
+<engineerTo>
+<item key="B7884481-4DAD-851F-D340-BAEBECCF223F" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>20</dataTypePrecision>
+<ownDataTypeParameters>,20,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="NUMBER" id="F84BCE5C-CA58-13BA-E028-C815E3A3AA49">
+<createdBy>Thiago</createdBy>
+<createdTime>2026-03-05 20:31:49 UTC</createdTime>
+<ownerDesignName>online-sales</ownerDesignName>
+<engineerTo>
+<item key="B7884481-4DAD-851F-D340-BAEBECCF223F" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>20</dataTypePrecision>
+<ownDataTypeParameters>,20,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="COUNTRY" id="EC98E5D1-3F5B-6742-C623-BDADC04BD454">
+<createdBy>Thiago</createdBy>
+<createdTime>2026-03-05 20:32:00 UTC</createdTime>
+<ownerDesignName>online-sales</ownerDesignName>
+<engineerTo>
+<item key="B7884481-4DAD-851F-D340-BAEBECCF223F" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="69657380-2279-ED75-1773-F946666F55F2" name="T_CP1_ADRESS PK">
+<createdBy>Thiago</createdBy>
+<createdTime>2026-03-05 20:29:26 UTC</createdTime>
+<ownerDesignName>online-sales</ownerDesignName>
+<engineerTo>
+<item key="B7884481-4DAD-851F-D340-BAEBECCF223F" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>9725FB6F-DC94-B6A5-0ED8-6D1BF8732FD7</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>
