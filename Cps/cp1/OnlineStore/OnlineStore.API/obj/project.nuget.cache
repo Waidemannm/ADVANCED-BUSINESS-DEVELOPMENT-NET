@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "NZwkjl5dzao=",
+  "success": true,
+  "projectFilePath": "/Users/waidemannn_m/Desktop/ADVANCED-BUSINESS-DEVELOPMENT-NET/Cps/cp1/OnlineStore/OnlineStore.API/OnlineStore.API.csproj",
+  "expectedPackageFiles": [
+    "/Users/waidemannn_m/.nuget/packages/microsoft.aspnetcore.openapi/10.0.3/microsoft.aspnetcore.openapi.10.0.3.nupkg.sha512",
+    "/Users/waidemannn_m/.nuget/packages/microsoft.openapi/2.0.0/microsoft.openapi.2.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}
