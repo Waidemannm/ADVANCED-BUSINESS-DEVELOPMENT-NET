@@ -20,18 +20,19 @@ public class Address : BaseEntity
     public Address(){
     }
 
-    public Address(string street, string city, string state, string postalCode, string number)
+    public Address(string street, string city, string state, string postalCode, string number, string country)
     {
         UpdateStreet(street);
         UpdateCity(city);
         UpdateState(state);
         UpdatePostalCode(postalCode);
         UpdateNumber(number);
+        UpdateCountry(country);
     }
 
     public void UpdateStreet(string newStreet)
     {
-        if (string.IsNullOrWhiteSpace(newStreet) && newStreet.Length <= 150)
+        if (!string.IsNullOrWhiteSpace(newStreet) && newStreet.Length <= 150)
         {
             Street = newStreet;
         }

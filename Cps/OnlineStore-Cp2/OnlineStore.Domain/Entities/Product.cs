@@ -19,8 +19,9 @@ public class Product: BaseEntity
         
     }
 
-    public Product(string name, string description, decimal price, int stock)
+    public Product(Guid idCategory, string name, string description, decimal price, int stock)
     {
+        IdCategory = idCategory;
         UpdateName(name);
         UpdateDescription(description);
         UpdatePrice(price);
@@ -51,9 +52,8 @@ public class Product: BaseEntity
     }  
     public void UpdateStock(int newStock)
     {
-        if (Stock < 100000)
-        {
-            Stock = newStock; 
+        if (newStock >= 0 && newStock < 100000){
+            Stock = newStock;
         }else{
             throw new ArgumentException("Quantidade inválida de estoque.");
             

@@ -28,13 +28,14 @@ public class Costumer : BaseEntity
     {
         IdPayment = idPayment;
         IdAddress = idAddress;
-        updateName(name);
-        updateEmail(email);
+        UpdateName(name);
+        UpdateEmail(email);
+        Gender = gender;
         UpdateBirthDate(birthDate);
     }
     
     
-    public void updateName(string newName)
+    public void UpdateName(string newName)
     {
         if (!string.IsNullOrWhiteSpace(newName) && newName.Length <= 300)
         {
@@ -56,7 +57,7 @@ public class Costumer : BaseEntity
         SetBirthDate = newDate;
     }
     
-    public void updateEmail(string newEmail)
+    public void UpdateEmail(string newEmail)
     {
         if (!string.IsNullOrWhiteSpace(newEmail) && newEmail.Length <= 100)
         {

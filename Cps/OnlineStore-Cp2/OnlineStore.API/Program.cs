@@ -1,5 +1,8 @@
 using Microsoft.EntityFrameworkCore;
 using OnlineInfrastructure.Persistence;
+using OnlineStore.Application.Interfaces;
+using OnlineStore.Application.Services;
+
 namespace OnlineSore.Domain;
 
 /// <summary>
@@ -11,17 +14,17 @@ public class Program
     public static void Main(string[] args)
     {
         var builder = WebApplication.CreateBuilder(args);
-
-        // Registra os controllers da API
-        builder.Services.AddControllers();
-
-        // AddScoped: uma instância por requisição HTTP (guardado)
         
-        // AddTransient: nova instância a cada resolução
-        // AddSingleton: uma única instância durante toda a vida da aplicação
-        //builder.Services.AddScoped<IUserService, UserService>();
+        builder.Services.AddControllers();
+        
+        
+        builder.Services.AddScoped<IRatingProductService, RatingProductService>();
+        builder.Services.AddScoped<IProductService, ProductService>();
+        builder.Services.AddScoped<IPaymentService, PaymentService>();
+        builder.Services.AddScoped<ICostumerService, CostumerService>();
+        builder.Services.AddScoped<ICategoryService, CategoryService>();
+        builder.Services.AddScoped<IAddressService, AddressService>();
 
-        //Registrando banco de dados no contexto de injecao de dependencia
         builder.Services.AddDbContext<OnlineStoreContext>(options =>
         {
             var connectionString = builder.Configuration.GetConnectionString("OnlineStoreContextOracle");
@@ -31,15 +34,13 @@ public class Program
             
         });
 
-        // OpenAPI/Swagger - documentação da API
         builder.Services.AddOpenApi();
 
         var app = builder.Build();
 
-        // Pipeline de requisições
         if (app.Environment.IsDevelopment())
         {
-            app.MapOpenApi(); // /openapi/v1.json
+            app.MapOpenApi(); 
         }
 
         app.UseHttpsRedirection();

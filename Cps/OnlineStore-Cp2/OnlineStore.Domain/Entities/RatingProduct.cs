@@ -3,8 +3,10 @@ using OnlineSore.Domain.Enum;
  
  namespace OnlineSore.Domain.Entities;
  
- public class RatingProduct : BaseEntity
+ public class RatingProduct 
  {
+     public DateTime CreatedAt { get; private set; } = DateTime.Now;
+     
      public Guid IdCostumer { get; private set; }
  
      public Guid IdProduct { get; private set; }

@@ -13,8 +13,8 @@ public class Category : BaseEntity
         
     }
     
-    public Category(String name, String description)
-    {
+    public Category(string name, string description)
+    { 
         UpdateName(name);
         UpdateDescription(description);
     }
